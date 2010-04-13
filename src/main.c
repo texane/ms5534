@@ -2,7 +2,7 @@
 ** Made by fabien le mentec <texane@gmail.com>
 ** 
 ** Started on  Thu Nov 19 20:03:19 2009 texane
-** Last update Tue Apr 13 10:51:18 2010 texane
+** Last update Tue Apr 13 13:20:02 2010 texane
 */
 
 
@@ -10,6 +10,7 @@
 #pragma stack 0x200 255
 
 #include <pic18fregs.h>
+#include "ms5534.h"
 
 
 
