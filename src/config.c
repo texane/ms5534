@@ -21,7 +21,6 @@
 /* $Id: config.c,v 1.5 2009-08-15 16:11:15 gaufille Exp $ */
 
 #include <pic18fregs.h>
-#include "config.h"
 
 /* Set the PIC config words */
 code char at __CONFIG1L _conf0  = _USBPLL_CLOCK_SRC_FROM_96MHZ_PLL_2_1L &

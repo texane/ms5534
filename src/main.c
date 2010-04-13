@@ -2,7 +2,7 @@
 ** Made by fabien le mentec <texane@gmail.com>
 ** 
 ** Started on  Thu Nov 19 20:03:19 2009 texane
-** Last update Tue Apr 13 10:45:11 2010 texane
+** Last update Tue Apr 13 10:51:18 2010 texane
 */
 
 
@@ -30,13 +30,13 @@ static void switch_led(void)
   ++ledc;
 
   if (ledc == 0x1000)
-    {
-      ledv ^= 1;
-      ledc = 0;
+  {
+    ledv ^= 1;
+    ledc = 0;
 
-      TRISAbits.TRISA0 = 0;
-      PORTAbits.RA0 = ledv;
-    }
+    TRISAbits.TRISA0 = 0;
+    PORTAbits.RA0 = ledv;
+  }
 }
 
 #endif
@@ -44,15 +44,11 @@ static void switch_led(void)
 
 void main(void)
 {
+  float temp = 0.f;
+
   initialize();
 
   while(1)
-    {
-      INTCON = 0;
-
-      usb_sleep();
-      dispatch_usb_event();
-
-      m600_schedule();
-    }
+  {
+  }
 }
